@@ -1,0 +1,44 @@
+{
+  "id": "blockdiagram",
+  "version": 1,
+  "name": "System Diagram",
+  "icon": "boxes",
+  "order": 45,
+  "structure": "blockdiagram",
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "arrow",
+    "edgeType": "default"
+  },
+  "seed": {
+    "nodes": [
+      { "id": "bd-apps", "x": 0, "y": 0, "width": 160, "height": 64, "type": "text", "text": "Application" },
+      { "id": "bd-user", "x": 0, "y": 76, "width": 940, "height": 200, "color": "#53dfdd", "type": "group", "label": "User Mode" },
+      { "id": "bd-svc-a", "x": 16, "y": 128, "width": 160, "height": 64, "parentId": "bd-user", "type": "text", "text": "Service A" },
+      { "id": "bd-svc-b", "x": 192, "y": 128, "width": 160, "height": 64, "parentId": "bd-user", "type": "text", "text": "Service B" },
+      { "id": "bd-kernel", "x": 0, "y": 288, "width": 940, "height": 260, "color": "#a882ff", "type": "group", "label": "Kernel Mode" },
+      { "id": "bd-exec", "x": 16, "y": 340, "width": 908, "height": 48, "parentId": "bd-kernel", "type": "text", "text": "Executive Services" },
+      { "id": "bd-io", "x": 16, "y": 400, "width": 160, "height": 64, "parentId": "bd-kernel", "type": "text", "text": "I/O Manager" },
+      { "id": "bd-mem", "x": 192, "y": 400, "width": 160, "height": 64, "parentId": "bd-kernel", "type": "text", "text": "Memory Manager" },
+      { "id": "bd-hal", "x": 16, "y": 476, "width": 908, "height": 48, "parentId": "bd-kernel", "type": "text", "text": "Hardware Abstraction Layer" },
+      { "id": "bd-hw", "x": 0, "y": 560, "width": 940, "height": 56, "color": "#e9973f", "type": "text", "text": "Hardware" }
+    ],
+    "edges": [],
+    "x-clairvoyance": {
+      "template": "blockdiagram",
+      "blocks": {
+        "order": ["bd-apps", "bd-user", "bd-svc-a", "bd-svc-b", "bd-kernel", "bd-exec", "bd-io", "bd-mem", "bd-hal", "bd-hw"],
+        "wideIds": ["bd-exec", "bd-hal", "bd-hw"],
+        "collapsedIds": []
+      },
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "arrow",
+        "edgeType": "default"
+      },
+      "ui": {
+        "sidebarCollapsed": false
+      }
+    }
+  }
+}

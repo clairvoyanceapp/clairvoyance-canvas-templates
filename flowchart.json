@@ -1,0 +1,120 @@
+{
+  "id": "flowchart",
+  "version": 2,
+  "name": "Flowchart",
+  "icon": "workflow",
+  "order": 60,
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "arrow",
+    "edgeType": "orthogonal"
+  },
+  "seed": {
+    "nodes": [
+      {
+        "id": "flow-start",
+        "type": "shape",
+        "shapeType": "rounded-rectangle",
+        "text": "Start",
+        "x": 0,
+        "y": 0,
+        "width": 220,
+        "height": 100,
+        "fillColor": "#dcfce7",
+        "strokeColor": "#22c55e",
+        "textAlign": "center"
+      },
+      {
+        "id": "flow-process",
+        "type": "shape",
+        "shapeType": "rectangle",
+        "text": "Process",
+        "x": 0,
+        "y": 180,
+        "width": 220,
+        "height": 110,
+        "fillColor": "#dbeafe",
+        "strokeColor": "#3b82f6",
+        "textAlign": "center"
+      },
+      {
+        "id": "flow-decision",
+        "type": "shape",
+        "shapeType": "diamond",
+        "text": "Decision?",
+        "x": -10,
+        "y": 380,
+        "width": 240,
+        "height": 160,
+        "fillColor": "#fef3c7",
+        "strokeColor": "#f59e0b",
+        "textAlign": "center"
+      },
+      {
+        "id": "flow-end",
+        "type": "shape",
+        "shapeType": "rounded-rectangle",
+        "text": "End",
+        "x": 360,
+        "y": 410,
+        "width": 220,
+        "height": 100,
+        "fillColor": "#fee2e2",
+        "strokeColor": "#ef4444",
+        "textAlign": "center"
+      }
+    ],
+    "edges": [
+      {
+        "id": "flow-start-process",
+        "fromNode": "flow-start",
+        "fromSide": "bottom",
+        "fromEnd": "none",
+        "toNode": "flow-process",
+        "toSide": "top",
+        "toEnd": "arrow",
+        "edgeType": "orthogonal"
+      },
+      {
+        "id": "flow-process-decision",
+        "fromNode": "flow-process",
+        "fromSide": "bottom",
+        "fromEnd": "none",
+        "toNode": "flow-decision",
+        "toSide": "top",
+        "toEnd": "arrow",
+        "edgeType": "orthogonal"
+      },
+      {
+        "id": "flow-decision-end",
+        "fromNode": "flow-decision",
+        "fromSide": "right",
+        "fromEnd": "none",
+        "toNode": "flow-end",
+        "toSide": "left",
+        "toEnd": "arrow",
+        "edgeType": "orthogonal",
+        "label": "Yes"
+      },
+      {
+        "id": "flow-decision-process",
+        "fromNode": "flow-decision",
+        "fromSide": "left",
+        "fromEnd": "none",
+        "toNode": "flow-process",
+        "toSide": "left",
+        "toEnd": "arrow",
+        "edgeType": "orthogonal",
+        "label": "No"
+      }
+    ],
+    "x-clairvoyance": {
+      "template": "flowchart",
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "arrow",
+        "edgeType": "orthogonal"
+      }
+    }
+  }
+}

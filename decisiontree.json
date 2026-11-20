@@ -1,0 +1,93 @@
+{
+  "id": "decisiontree",
+  "version": 1,
+  "name": "Decision Tree",
+  "icon": "split",
+  "order": 35,
+  "structure": "decisiontree",
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "arrow",
+    "edgeType": "orthogonal"
+  },
+  "seed": {
+    "nodes": [
+      {
+        "id": "dt-root",
+        "x": 0,
+        "y": 108,
+        "width": 200,
+        "height": 76,
+        "type": "text",
+        "text": "Decision?"
+      },
+      {
+        "id": "dt-yes",
+        "x": 280,
+        "y": 0,
+        "width": 200,
+        "height": 76,
+        "type": "text",
+        "text": "Option A"
+      },
+      {
+        "id": "dt-no",
+        "x": 280,
+        "y": 216,
+        "width": 200,
+        "height": 76,
+        "type": "text",
+        "text": "Option B"
+      }
+    ],
+    "edges": [
+      {
+        "id": "hier:dt-root:dt-yes",
+        "fromNode": "dt-root",
+        "toNode": "dt-yes",
+        "fromSide": "right",
+        "toSide": "left",
+        "fromEnd": "none",
+        "toEnd": "none",
+        "label": "Yes",
+        "edgeType": "orthogonal"
+      },
+      {
+        "id": "hier:dt-root:dt-no",
+        "fromNode": "dt-root",
+        "toNode": "dt-no",
+        "fromSide": "right",
+        "toSide": "left",
+        "fromEnd": "none",
+        "toEnd": "none",
+        "label": "No",
+        "edgeType": "orthogonal"
+      }
+    ],
+    "x-clairvoyance": {
+      "template": "decisiontree",
+      "structure": {
+        "parentById": {
+          "dt-root": null,
+          "dt-yes": "dt-root",
+          "dt-no": "dt-root"
+        },
+        "order": [
+          "dt-root",
+          "dt-yes",
+          "dt-no"
+        ],
+        "direction": "left-right",
+        "collapsedIds": []
+      },
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "arrow",
+        "edgeType": "orthogonal"
+      },
+      "ui": {
+        "sidebarCollapsed": false
+      }
+    }
+  }
+}

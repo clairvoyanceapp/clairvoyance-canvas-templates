@@ -1,0 +1,95 @@
+{
+  "id": "fishbone",
+  "version": 1,
+  "name": "Fishbone",
+  "icon": "fish",
+  "order": 38,
+  "structure": "fishbone",
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "arrow"
+  },
+  "seed": {
+    "nodes": [
+      {
+        "id": "fb-effect",
+        "x": 88,
+        "y": -45,
+        "width": 220,
+        "height": 90,
+        "color": "1",
+        "type": "text",
+        "text": "Problem"
+      },
+      {
+        "id": "fb-people",
+        "x": -260,
+        "y": -190,
+        "width": 170,
+        "height": 60,
+        "color": "5",
+        "type": "text",
+        "text": "People"
+      },
+      {
+        "id": "fb-process",
+        "x": -260,
+        "y": 130,
+        "width": 170,
+        "height": 60,
+        "color": "5",
+        "type": "text",
+        "text": "Process"
+      },
+      {
+        "id": "fb-tools",
+        "x": -520,
+        "y": -190,
+        "width": 170,
+        "height": 60,
+        "color": "5",
+        "type": "text",
+        "text": "Tools"
+      },
+      {
+        "id": "fb-environment",
+        "x": -520,
+        "y": 130,
+        "width": 170,
+        "height": 60,
+        "color": "5",
+        "type": "text",
+        "text": "Environment"
+      }
+    ],
+    "edges": [],
+    "x-clairvoyance": {
+      "template": "fishbone",
+      "structure": {
+        "parentById": {
+          "fb-effect": null,
+          "fb-people": "fb-effect",
+          "fb-process": "fb-effect",
+          "fb-tools": "fb-effect",
+          "fb-environment": "fb-effect"
+        },
+        "order": [
+          "fb-effect",
+          "fb-people",
+          "fb-process",
+          "fb-tools",
+          "fb-environment"
+        ],
+        "direction": "left-right",
+        "collapsedIds": []
+      },
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "arrow"
+      },
+      "ui": {
+        "sidebarCollapsed": false
+      }
+    }
+  }
+}

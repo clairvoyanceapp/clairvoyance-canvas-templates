@@ -1,0 +1,28 @@
+{
+  "id": "affinity",
+  "version": 1,
+  "name": "Affinity Map",
+  "icon": "sticky-note",
+  "order": 25,
+  "structure": "affinity",
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "none",
+    "edgeType": "default"
+  },
+  "seed": {
+    "nodes": [],
+    "edges": [],
+    "x-clairvoyance": {
+      "template": "affinity",
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "none",
+        "edgeType": "default"
+      },
+      "ui": {
+        "sidebarCollapsed": false
+      }
+    }
+  }
+}

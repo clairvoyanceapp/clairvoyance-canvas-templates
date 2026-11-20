@@ -1,0 +1,49 @@
+{
+  "id": "mindmap",
+  "version": 2,
+  "name": "Mind Map",
+  "icon": "brain",
+  "order": 30,
+  "structure": "mindmap",
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "none",
+    "edgeType": "orthogonal"
+  },
+  "seed": {
+    "nodes": [
+      {
+        "id": "mindmap-center",
+        "type": "text",
+        "text": "Central Idea",
+        "x": 0,
+        "y": 0,
+        "width": 200,
+        "height": 76,
+        "color": "6"
+      }
+    ],
+    "edges": [],
+    "x-clairvoyance": {
+      "template": "mindmap",
+      "structure": {
+        "parentById": {
+          "mindmap-center": null
+        },
+        "order": [
+          "mindmap-center"
+        ],
+        "direction": "left-right",
+        "collapsedIds": []
+      },
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "none",
+        "edgeType": "orthogonal"
+      },
+      "ui": {
+        "sidebarCollapsed": false
+      }
+    }
+  }
+}

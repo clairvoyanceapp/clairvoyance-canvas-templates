@@ -1,0 +1,100 @@
+{
+  "id": "swot",
+  "version": 2,
+  "name": "SWOT",
+  "icon": "layout-grid",
+  "order": 70,
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "none",
+    "edgeType": "default"
+  },
+  "seed": {
+    "nodes": [
+      {
+        "id": "swot-strengths",
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 280,
+        "color": "#44cf6e",
+        "type": "group",
+        "label": "Strengths"
+      },
+      {
+        "id": "swot-weaknesses",
+        "x": 456,
+        "y": 0,
+        "width": 440,
+        "height": 280,
+        "color": "#fb464c",
+        "type": "group",
+        "label": "Weaknesses"
+      },
+      {
+        "id": "swot-opportunities",
+        "x": 0,
+        "y": 296,
+        "width": 440,
+        "height": 280,
+        "color": "#53dfdd",
+        "type": "group",
+        "label": "Opportunities"
+      },
+      {
+        "id": "swot-threats",
+        "x": 456,
+        "y": 296,
+        "width": 440,
+        "height": 280,
+        "color": "#e9973f",
+        "type": "group",
+        "label": "Threats"
+      }
+    ],
+    "edges": [],
+    "x-clairvoyance": {
+      "template": "swot",
+      "bands": {
+        "kind": "quadrant",
+        "order": [
+          "swot-strengths",
+          "swot-weaknesses",
+          "swot-opportunities",
+          "swot-threats"
+        ],
+        "byId": {
+          "swot-strengths": {
+            "rank": null,
+            "color": "#44cf6e",
+            "crossCutting": false
+          },
+          "swot-weaknesses": {
+            "rank": null,
+            "color": "#fb464c",
+            "crossCutting": false
+          },
+          "swot-opportunities": {
+            "rank": null,
+            "color": "#53dfdd",
+            "crossCutting": false
+          },
+          "swot-threats": {
+            "rank": null,
+            "color": "#e9973f",
+            "crossCutting": false
+          }
+        }
+      },
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "none",
+        "edgeType": "default"
+      },
+      "ui": {
+        "sidebarCollapsed": false
+      }
+    }
+  },
+  "structure": "bands"
+}

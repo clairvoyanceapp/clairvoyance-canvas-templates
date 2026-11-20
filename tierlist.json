@@ -1,0 +1,149 @@
+{
+  "id": "tierlist",
+  "version": 3,
+  "name": "Tier List",
+  "icon": "list-ordered",
+  "order": 50,
+  "structure": "bands",
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "none",
+    "edgeType": "default"
+  },
+  "seed": {
+    "nodes": [
+      {
+        "id": "tier-s",
+        "x": 0,
+        "y": 0,
+        "width": 900,
+        "height": 120,
+        "color": "#ff7f7f",
+        "type": "group",
+        "label": "S"
+      },
+      {
+        "id": "tier-a",
+        "x": 0,
+        "y": 120,
+        "width": 900,
+        "height": 120,
+        "color": "#ffbf7f",
+        "type": "group",
+        "label": "A"
+      },
+      {
+        "id": "tier-b",
+        "x": 0,
+        "y": 240,
+        "width": 900,
+        "height": 120,
+        "color": "#ffdf7f",
+        "type": "group",
+        "label": "B"
+      },
+      {
+        "id": "tier-c",
+        "x": 0,
+        "y": 360,
+        "width": 900,
+        "height": 120,
+        "color": "#ffff7f",
+        "type": "group",
+        "label": "C"
+      },
+      {
+        "id": "tier-d",
+        "x": 0,
+        "y": 480,
+        "width": 900,
+        "height": 120,
+        "color": "#7fff7f",
+        "type": "group",
+        "label": "D"
+      },
+      {
+        "id": "tier-f",
+        "x": 0,
+        "y": 600,
+        "width": 900,
+        "height": 120,
+        "color": "#7f7fff",
+        "type": "group",
+        "label": "F"
+      },
+      {
+        "id": "tier-unranked",
+        "x": 0,
+        "y": 720,
+        "width": 900,
+        "height": 120,
+        "color": "#4b5563",
+        "type": "group",
+        "label": "Unranked"
+      }
+    ],
+    "edges": [],
+    "x-clairvoyance": {
+      "template": "tierlist",
+      "bands": {
+        "kind": "tier",
+        "order": [
+          "tier-s",
+          "tier-a",
+          "tier-b",
+          "tier-c",
+          "tier-d",
+          "tier-f",
+          "tier-unranked"
+        ],
+        "byId": {
+          "tier-s": {
+            "rank": "S",
+            "color": "#ff7f7f",
+            "crossCutting": false
+          },
+          "tier-a": {
+            "rank": "A",
+            "color": "#ffbf7f",
+            "crossCutting": false
+          },
+          "tier-b": {
+            "rank": "B",
+            "color": "#ffdf7f",
+            "crossCutting": false
+          },
+          "tier-c": {
+            "rank": "C",
+            "color": "#ffff7f",
+            "crossCutting": false
+          },
+          "tier-d": {
+            "rank": "D",
+            "color": "#7fff7f",
+            "crossCutting": false
+          },
+          "tier-f": {
+            "rank": "F",
+            "color": "#7f7fff",
+            "crossCutting": false
+          },
+          "tier-unranked": {
+            "rank": null,
+            "color": "#4b5563",
+            "crossCutting": false,
+            "pinnedLast": true
+          }
+        }
+      },
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "none",
+        "edgeType": "default"
+      },
+      "ui": {
+        "sidebarCollapsed": false
+      }
+    }
+  }
+}

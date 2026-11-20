@@ -1,0 +1,84 @@
+{
+  "id": "architecture",
+  "version": 3,
+  "name": "Architecture",
+  "icon": "layers",
+  "order": 40,
+  "structure": "bands",
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "arrow",
+    "edgeType": "orthogonal"
+  },
+  "seed": {
+    "nodes": [
+      {
+        "id": "architecture-presentation",
+        "x": 0,
+        "y": 0,
+        "width": 900,
+        "height": 150,
+        "color": "#a882ff",
+        "type": "group",
+        "label": "Presentation"
+      },
+      {
+        "id": "architecture-services",
+        "x": 0,
+        "y": 158,
+        "width": 900,
+        "height": 150,
+        "color": "#53dfdd",
+        "type": "group",
+        "label": "Services"
+      },
+      {
+        "id": "architecture-data",
+        "x": 0,
+        "y": 316,
+        "width": 900,
+        "height": 150,
+        "color": "#44cf6e",
+        "type": "group",
+        "label": "Data"
+      }
+    ],
+    "edges": [],
+    "x-clairvoyance": {
+      "template": "architecture",
+      "bands": {
+        "kind": "layer",
+        "order": [
+          "architecture-presentation",
+          "architecture-services",
+          "architecture-data"
+        ],
+        "byId": {
+          "architecture-presentation": {
+            "rank": null,
+            "color": "#a882ff",
+            "crossCutting": false
+          },
+          "architecture-services": {
+            "rank": null,
+            "color": "#53dfdd",
+            "crossCutting": false
+          },
+          "architecture-data": {
+            "rank": null,
+            "color": "#44cf6e",
+            "crossCutting": false
+          }
+        }
+      },
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "arrow",
+        "edgeType": "orthogonal"
+      },
+      "ui": {
+        "sidebarCollapsed": false
+      }
+    }
+  }
+}

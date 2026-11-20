@@ -1,0 +1,48 @@
+{
+  "id": "hierarchy",
+  "version": 2,
+  "name": "Hierarchy",
+  "icon": "hierarchy",
+  "order": 20,
+  "structure": "hierarchy",
+  "edgeDefaults": {
+    "fromEnd": "none",
+    "toEnd": "none",
+    "edgeType": "orthogonal"
+  },
+  "seed": {
+    "nodes": [
+      {
+        "id": "hierarchy-root",
+        "type": "text",
+        "text": "Untitled",
+        "x": 0,
+        "y": 0,
+        "width": 200,
+        "height": 76
+      }
+    ],
+    "edges": [],
+    "x-clairvoyance": {
+      "template": "hierarchy",
+      "structure": {
+        "parentById": {
+          "hierarchy-root": null
+        },
+        "order": [
+          "hierarchy-root"
+        ],
+        "direction": "top-down",
+        "collapsedIds": []
+      },
+      "edgeDefaults": {
+        "fromEnd": "none",
+        "toEnd": "none",
+        "edgeType": "orthogonal"
+      },
+      "ui": {
+        "sidebarCollapsed": false
+      }
+    }
+  }
+}
